@@ -12,6 +12,14 @@ O Apache Hadoop é um framework open-source que permite o processamento distribu
 
 [Informações sobre o ecossistema hadoop](https://hadoopecosystemtable.github.io/)
 
-https://data.gov/
-https://data.worldbank.org/
-https://opendata.cityofnewyork.us/
+### Laboratórios
+
+Aula 1 - Fundamentos de BigData na prática e Prática com Hadoop no Colab - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pysAPEfLfmbxfF9wyxB1YBm8w0zsROg0?usp=sharing))
+
+### Dataset
+[Brasilian e-commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+### Outras Sugestões de Dataset
+1. https://data.gov/
+2. https://data.worldbank.org/
+3. https://opendata.cityofnewyork.us/
