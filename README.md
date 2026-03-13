@@ -12,4 +12,6 @@ O Apache Hadoop é um framework open-source que permite o processamento distribu
 
 [Informações sobre o ecossistema hadoop](https://hadoopecosystemtable.github.io/)
 
-
+https://data.gov/
+https://data.worldbank.org/
+https://opendata.cityofnewyork.us/
