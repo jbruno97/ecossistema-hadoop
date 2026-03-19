@@ -14,7 +14,9 @@ O Apache Hadoop é um framework open-source que permite o processamento distribu
 
 ### Laboratórios
 
-Aula 1 - Fundamentos de BigData e Prática com Hadoop no Colab - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pysAPEfLfmbxfF9wyxB1YBm8w0zsROg0?usp=sharing))
+Aulas 1 e 2 - Prática com Hadoop no Colab - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lsYb7xP6gFk-Zwyzwl0Hkbk3aWIQ5KpK?usp=sharing)
+
+Aula 3 - Prática com Spark no Colab - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1QlQiUuRNcbWFW3xLuY1BoUWlrPyZGxL8?usp=sharing)
 
 ### Dataset
 [Brasilian e-commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
