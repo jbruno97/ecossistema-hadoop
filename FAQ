@@ -1,0 +1,193 @@
+---
+
+# ❓ **FAQ — Ecossistema Hadoop**
+
+> Clique nas perguntas para expandir 👇
+
+---
+
+<details>
+<summary>🔧 Preciso sempre usar export JAVA_HOME no Colab?</summary>
+
+👉 **Não, se configurar corretamente.**
+
+Use isso no início do notebook:
+
+```python
+import os
+os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-8-openjdk-amd64"
+os.environ["HADOOP_HOME"] = "/content/hadoop-3.2.1"
+```
+
+✔ Execute apenas uma vez
+
+</details>
+
+---
+
+<details>
+<summary>🧠 Por que o export não funciona direito no Colab?</summary>
+
+* `!comando` → roda em um terminal temporário
+* Variáveis desaparecem após execução
+
+👉 O Colab é um ambiente **temporário**
+
+</details>
+
+---
+
+<details>
+<summary>🏗️ Como isso funciona em ambiente real?</summary>
+
+No mundo real, o Java já está configurado:
+
+* Sistema (`/etc/environment`)
+* Usuário (`~/.bashrc`)
+* Hadoop (`hadoop-env.sh`) ✅
+
+👉 Você não precisa ficar exportando
+
+</details>
+
+---
+
+<details>
+<summary>☕ Preciso saber Java para usar Hadoop?</summary>
+
+👉 **Não**
+
+Você pode usar:
+
+* Python (Hadoop Streaming) ✅
+* SQL (Hive)
+* Scala (Spark)
+
+✔ Java é só o motor interno
+
+</details>
+
+---
+
+<details>
+<summary>💻 Onde posso rodar Hadoop?</summary>
+
+| Ambiente             | Uso             |
+| -------------------- | --------------- |
+| Colab                | Aprender        |
+| Docker               | Desenvolvimento |
+| Cloud (Dataproc/EMR) | Produção        |
+| Cloudera             | Simulação real  |
+
+</details>
+
+---
+
+<details>
+<summary>📦 O que é um arquivo pequeno no Hadoop?</summary>
+
+👉 Qualquer arquivo menor que **128 MB**
+
+</details>
+
+---
+
+<details>
+<summary>⚠️ Por que arquivos pequenos são um problema?</summary>
+
+* Sobrecarregam o NameNode
+* Consomem memória
+* Reduzem performance
+
+👉 Muitos arquivos pequenos = problema sério
+
+</details>
+
+---
+
+<details>
+<summary>🧠 Quanto cada arquivo consome?</summary>
+
+👉 Aproximadamente **150 bytes de RAM**
+
+</details>
+
+---
+
+<details>
+<summary>🛠️ Como resolver o problema de arquivos pequenos?</summary>
+
+✔ Estratégias:
+
+* Agrupar arquivos
+* Sequence Files
+* HAR Files
+* CombineFileInputFormat
+
+👉 Melhor solução: evitar gerar arquivos pequenos
+
+</details>
+
+---
+
+<details>
+<summary>⚙️ Existe parâmetro para isso no Hadoop?</summary>
+
+Sim:
+
+```bash
+mapreduce.input.fileinputformat.split.minsize
+```
+
+</details>
+
+---
+
+<details>
+<summary>🎯 Qual a regra de ouro no Hadoop?</summary>
+
+👉 Trabalhar com arquivos próximos de **128 MB**
+
+</details>
+
+---
+
+<details>
+<summary>🎒 Explicação simples (analogia)</summary>
+
+* Servidor real → já configurado
+* Colab → você configura toda vez
+
+👉 Use `os.environ` como sua “mochila”
+
+</details>
+
+---
+
+<details>
+<summary>🚀 Dica final do professor</summary>
+
+```text
+Colab = aprender lógica
+Cloud = mundo real
+MapReduce = base da engenharia de dados
+```
+
+</details>
+
+---
+
+# 🔥 **Se ainda tiver dúvidas...**
+
+👉 Abra uma issue no repositório
+👉 Ou traga para a aula
+
+---
+
+Se quiser, posso evoluir isso para:
+
+* 🎨 versão visual com badges e cores
+* 🧪 seção “erros comuns + solução rápida”
+* 📊 checklist de execução de jobs Hadoop
+
+Só falar 👍
