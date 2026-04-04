@@ -18,6 +18,9 @@ Aulas 1 e 2 - Prática com Hadoop no Colab - [![Open In Colab](https://colab.res
 
 Aula 3 - Prática com Spark no Colab - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1QlQiUuRNcbWFW3xLuY1BoUWlrPyZGxL8?usp=sharing)
 
+Aula 4 - Prática de Machine Learning com Spark [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12__JXjdPyerusuw_1TaeiCBcH-31Aske?usp=sharing)
+
+
 ### Dataset
 [Brasilian e-commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
